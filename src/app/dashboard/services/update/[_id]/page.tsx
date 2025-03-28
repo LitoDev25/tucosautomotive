@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import { UpdateForm } from "../component/form/index";
 
 interface Props {
-    params: string
+    params: string | any
 }
 
 

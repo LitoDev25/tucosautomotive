@@ -5,7 +5,7 @@ import { redirect, useParams } from 'next/navigation';
 import { getCookieClient } from '@/lib/cookieClient';
 
 interface ParamId {
-    params: string
+    params: string | any
 }
 
 export default function updateStatus({params: _id}: ParamId) {
