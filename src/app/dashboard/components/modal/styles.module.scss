@@ -1,0 +1,102 @@
+.dialogContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.50);
+    z-index: 99;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    backdrop-filter: blur(4px);
+}
+
+.dContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogContent {
+    background: hsla(var(--black-color), 0.6);
+    margin: auto;
+    padding: 16px;
+    border-radius: 8px;
+    width: 600px;
+    position: relative;
+    color: var(--font-color);
+    border: 3px groove hsla(var(--yellow-color), 0.6);
+
+    h2 {
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+}
+
+.orderNumber {
+    background: hsla(var(--green-color), 0.6);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.dialogBack {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: 3px groove hsla(var(--white-color), 0.8);
+    border-radius: 8px;
+    color: hsla(var(--white-color), 0.8);
+    transition: all 0.25s;
+
+    &:hover {
+        transform: scale(1.05);
+        border: 3px groove hsla(var(--red-color), 08);
+        color: hsla(var(--red-color), 08);
+        border-radius: 25px;
+    }
+}
+
+.orderItem {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.description {
+    color: hsla(var(--white-color), 0.5);
+    margin-top: 4px;
+}
+
+.buttonOrder {
+    background: hsla(var(--yellow-color), 0.8);
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 700;
+    transition: all 0.25s;
+
+    &:hover {
+        transform: scale(1.08);
+        background: hsla(var(--yellow-color), 0.9);
+    }
+}
+
+.imgOrder img {
+    width: 110px;
+    position: absolute;
+    right: 10px;
+    transition: all 0.25s;
+    cursor: zoom-in;
+
+    &:hover {
+        right: 55px;
+        transform: scale(2);
+        border-radius: 10px;
+    }
+}

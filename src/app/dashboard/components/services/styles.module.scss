@@ -1,0 +1,50 @@
+.serviceContainer {
+    max-width: 750px;
+    padding: 5px;
+}
+
+.serviceBoxContent {
+    width: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.serviceTopo {
+    display: flex;
+    gap: 8px;
+    background: hsla(var(--black-color), 1);    
+
+    h1 {
+        color: var(--font-color);
+        padding: 10px;
+    }
+
+    button {
+        padding: 3px;
+        background: transparent;
+        border: none;
+    }
+}
+
+.servicesBox {
+    background: hsla(var(--yellow-color), 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    margin-top: 5px;
+
+    span {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--font-color);
+    }
+}
+
+.serviceBtn {
+    display: flex;
+    gap: 5px;
+}

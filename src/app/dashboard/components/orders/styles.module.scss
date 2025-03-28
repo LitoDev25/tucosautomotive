@@ -1,0 +1,98 @@
+
+.container {
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h2 {
+        color: var(--font-color);
+    }
+}
+
+.boxController {
+    height: 50vh;
+    width: 50vw;
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+
+    button {
+        background: transparent;
+        border: 0;
+    }
+}
+
+.listOrder {
+    padding: 10px;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.orderItem {
+    display: flex;
+    background: hsla(var(--black-color), 1);
+    align-items: center;
+    border: 0;
+    font-size: 11.5pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    color: hsla(var(--white-color), 1);
+    gap: 16px;
+    transition: 0.25s;
+
+    &:hover {
+        filter: brightness(1.5);
+    }
+
+    button {
+        transition: all 0.25s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+.tag {
+    width: 9px;
+    height: 60px;
+    background: hsla(var(--green-color), 0.9);
+    border-radius: 6px 0 0 6px;
+}
+
+@media (max-width: 320px) {
+    .boxController {
+        height: 50vh;
+        width: 90vw;
+    }
+    
+    .listOrder {
+        max-width: 55vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .boxController {
+        height: 50vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1080px) {
+    .boxController {
+        height: 50vh;
+        width: 50vw;
+    }
+}

@@ -1,0 +1,38 @@
+.formContainerUpdate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    min-width: 400px;
+    min-height: 300px;
+    border: 4px groove hsla(var(--white-color), 0.7);
+    border-radius: 10px;
+}
+
+.continerUpFiles {
+    max-width: 600px;
+    max-width: 300px;
+}
+
+.itemForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    input {
+        max-width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+.submitForm {
+    padding: 10px;
+    button {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
